@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextFieldsSesion" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">24dp</item>
+        <item name="itemIconTint">@color/primary</item>
+        <item name="itemTextColor">@color/primary_text</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:colorEdgeEffect">@color/primary</item>
+
+    </style>
+</resources>

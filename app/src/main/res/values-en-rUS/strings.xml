@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CookIT</string>
+    <string name="ingredientesTitulo" translatable="false">Ingredients</string>
+    <string name="botoncocinar" translatable="false">Cook</string>
+    <string name="acerca_de_nosotros" translatable="false">About US</string>
+    <string name="crear_una_cuenta_nueva" translatable="false">Create new account</string>
+    <string name="O_Or" translatable="false">Or</string>
+    <string name="quienes_somos" translatable="false">¿Who are we?</string>
+    <string name="Inicio" translatable="false">Home</string>
+    <string name="mis_datos" translatable="false">My information</string>
+    <string name="cerrar_sesion" translatable="false">Log out</string>
+    <string name="hola" translatable="false">Hi</string>
+</resources>

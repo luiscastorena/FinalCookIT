@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "764465984422",
+    "project_id": "finalcookit",
+    "storage_bucket": "finalcookit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764465984422:android:3c85d4486ba0052d051567",
+        "android_client_info": {
+          "package_name": "com.example.finalcookit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "764465984422-c5ujqugn4n5mtsijm2nnocpkgeogrdit.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjDkkkmNGvmnuPG856BSEgi9DhXpwy2cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "764465984422-c5ujqugn4n5mtsijm2nnocpkgeogrdit.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

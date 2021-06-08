@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Inicio"
+        android:icon="@drawable/ic_inicio"
+        android:title="Ingredientes"/>
+    <item
+        android:id="@+id/Recetas"
+        android:icon="@drawable/ic_recetas"
+        android:title="Recetas"/>
+    <item
+        android:id="@+id/Categorias"
+        android:icon="@drawable/ic_categorias"
+        android:title="Categorias"/>
+    <item
+        android:id="@+id/Sesion"
+        android:icon="@drawable/ic_baseline_view_headline_24"
+        android:title="Sesion"/>
+</menu>

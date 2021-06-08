@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:id="@+id/toolbar"
+                    android:layout_height="?attr/actionBarSize"
+                    app:menu="@menu/top_app_bar"
+                    android:background="@color/icons"
+                    android:elevation="6dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="120dp"
+                                    android:layout_marginLeft="-18dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:src="@drawable/ic_logoinicial"
+                                    app:tint="@color/primary" />
+
+                        </RelativeLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <LinearLayout
+            android:background="@color/icons"
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            tools:ignore="MissingConstraints">
+                <TextView
+                    android:id="@+id/IngredientesTitulo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/ingredientesTitulo"
+                    android:textSize="36sp"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="621dp"
+            android:layout_below="@+id/linearLayout"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <GridView
+                    android:background="@color/icons"
+                    android:id="@+id/grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="608dp"
+                    android:gravity="center"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="9dp"
+                    android:visibility="visible"
+
+                    />
+        </LinearLayout>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/BottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/grid_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:menu="@menu/bottom_navigation_menu"
+            tools:ignore="MissingConstraints"/>
+
+
+</RelativeLayout>

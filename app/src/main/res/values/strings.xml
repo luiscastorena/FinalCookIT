@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CookIT</string>
+    <string name="ingredientesTitulo">Ingredientes</string>
+    <string name="botoncocinar">Cocinar</string>
+    <string name="acerca_de_nosotros">Acerca de nosotros</string>
+    <string name="crear_una_cuenta_nueva">Crear una cuenta nueva</string>
+    <string name="O_Or">O</string>
+    <string name="facebook_app_id" translatable="false">837526036859603</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb837526036859603</string>
+    <string name="quienes_somos">¿Quiénes somos?</string>
+    <string name="acerca_nosotros" translatable="false">TODO</string>
+    <string name="descripcion_acerca" translatable="false">Somos un equipo de estudiantes de ingeniería en Tecnologías de la información y comunicaciones que desarrolla un proyecto innovador para ayudar a los usuarios a preparar ricas comidas, ofreciendo recetas con los ingredientes con los que cuenta el usuario en ese momento, proporcionando en cada receta información nutrimental acerca de la comida. Se atenderá la problemática de Salud y bienestar (Objetivo de desarrollo sostenible de la ONU) ya que este objetivo fomenta el garantizar una vida sana y promover el bienestar en todas las edades es esencial para el desarrollo sostenible.</string>
+    <string name="Inicio">Inicio</string>
+    <string name="mis_datos">Mis Datos</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="hola">Hola</string>
+    <string name="iniciarseion" translatable="false">Iniciar sesión</string>
+    <string name="string_categoras" translatable="false">Categorías</string>
+    <string name="parrafo">Somos un equipo de estudiantes de ingeniería en Tecnologías de la información y comunicaciones que desarrolla un proyecto innovador para ayudar a los usuarios a preparar ricas comidas, ofreciendo recetas con los ingredientes con los que cuenta el usuario en ese momento, proporcionando en cada receta información nutrimental acerca de la comida. Se atenderá la problemática de Salud y bienestar (Objetivo de desarrollo sostenible de la ONU) ya que este objetivo fomenta el garantizar una vida sana y promover el bienestar en todas las edades es esencial para el desarrollo sostenible.</string>
+    <string name="editar">Editar</string>
+
+
+</resources>
