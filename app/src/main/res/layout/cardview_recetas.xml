@@ -13,18 +13,19 @@
         <TextView
             android:id="@+id/titulo_receta"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingBottom="300dp"
+            android:layout_height="100dp"
+            android:paddingBottom="0dp"
+            android:layout_marginTop="170dp"
             android:text="Titulo de la receta:"
             android:textColor="#000000" />
 
         <ImageView
-            android:id="@+id/person_photo"
+            android:id="@+id/IV_imagen"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="0dp"
             android:background="@drawable/aguacate"
             android:contentDescription="TODO" />
 

@@ -9,75 +9,82 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
 
                 <androidx.appcompat.widget.Toolbar
-                    android:layout_width="match_parent"
                     android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    app:menu="@menu/top_app_bar"
-                    android:background="@color/icons"
+                    android:background="@color/primary"
                     android:elevation="6dp">
+
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
+
                                 <ImageView
                                     android:layout_width="120dp"
-                                    android:layout_marginLeft="-18dp"
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentLeft="true"
-                                    android:src="@drawable/ic_logoinicial"
+                                    android:layout_marginLeft="-18dp"
+
                                     app:tint="@color/primary" />
 
                         </RelativeLayout>
                 </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
+
+
         <LinearLayout
-            android:background="@color/icons"
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="vertical"
-            android:layout_marginTop="70dp"
-            tools:ignore="MissingConstraints">
+            android:id="@+id/linearLayout2"
+            android:layout_width="409dp"
+            android:layout_height="137dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:orientation="vertical">
+
                 <TextView
-                    android:id="@+id/IngredientesTitulo1"
+                    android:id="@+id/CategoriasTitulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginStart="20dp"
                     android:layout_marginLeft="20dp"
-                    android:text="@string/ingredientesTitulo"
-                    android:textSize="36sp"
-                    />
+                    android:layout_marginTop="10dp"
+                    android:text="Entradas"
+                    android:textSize="36sp" />
+
+                <SearchView
+                    android:id="@+id/buscar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+
         </LinearLayout>
 
         <LinearLayout
-
-            android:id="@+id/grid_layout"
+            android:id="@+id/linearLayout3"
+            android:paddingTop="150dp"
             android:layout_width="match_parent"
-            android:layout_height="621dp"
-            android:layout_below="@+id/linearLayout"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="833dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintEnd_toEndOf="parent">
 
-                <GridView
-                    android:background="@color/icons"
-                    android:id="@+id/grid_view"
+                <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="608dp"
-                    android:gravity="center"
-                    android:numColumns="3"
-                    android:stretchMode="columnWidth"
-                    android:verticalSpacing="9dp"
-                    android:visibility="visible"
+                    android:layout_height="545dp">
 
-                    />
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                </ScrollView>
         </LinearLayout>
-
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
             style="@style/BottomNavigation"
@@ -85,7 +92,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="0dp"
-            app:layout_constraintBottom_toBottomOf="@id/grid_layout"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -93,6 +100,8 @@
             app:layout_constraintVertical_bias="1.0"
             app:menu="@menu/bottom_navigation_menu"
             tools:ignore="MissingConstraints"/>
+
+
 
 
 </RelativeLayout>

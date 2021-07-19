@@ -133,25 +133,28 @@ public class Sesion extends AppCompatActivity {
         });
         BottomNavigationView bottomNavigationView;
         bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.Sesion);
+        bottomNavigationView.setSelectedItemId(R.id.Cuenta);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.Inicio:
+                    case R.id.Entradas:
                         startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         overridePendingTransition(0, 0);
                         return true;
-                    case R.id.Recetas:
+                    case R.id.Bebidas:
                         startActivity(new Intent(getApplicationContext(), Recetas.class));
                         overridePendingTransition(0, 0);
                         return true;
-                    case R.id.Categorias:
+                    case R.id.Principales:
                         startActivity(new Intent(getApplicationContext(), Categorias.class));
                         overridePendingTransition(0, 0);
                         return true;
-                    case R.id.Sesion:
-
+                    case R.id.Postres:
+                        return true;
+                    case R.id.Cuenta:
+                        startActivity(new Intent(getApplicationContext(), Categorias.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;

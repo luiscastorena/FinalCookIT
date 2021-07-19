@@ -30,7 +30,7 @@
     </style>
     
     <style name="SplashTheme" parent="Theme.FinalCookIT">
-        <item name="android:windowBackground">@drawable/splashbueno</item>
+        <item name="android:windowBackground">@drawable/splashso</item>
     </style>
 
     <style name="styleTag" parent="Theme.FinalCookIT">

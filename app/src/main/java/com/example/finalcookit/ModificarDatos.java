@@ -74,24 +74,28 @@ String nuevo_nombre,nuevo_apellido,nuevo_correo,nombre,apellido,correo;
 
         BottomNavigationView bottomNavigationView;
         bottomNavigationView= findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.Sesion);
+        bottomNavigationView.setSelectedItemId(R.id.Cuenta);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
-                    case R.id.Inicio:
+                    case R.id.Entradas:
                         startActivity(new Intent(ModificarDatos.this, MainActivity.class));
                         overridePendingTransition(0, 0);
                         return true;
-                    case R.id.Recetas:
+                    case R.id.Bebidas:
                         startActivity(new Intent(ModificarDatos.this, Recetas.class));
                         overridePendingTransition(0, 0);
-                    case R.id.Categorias:
+                    case R.id.Principales:
                         startActivity(new Intent(ModificarDatos.this, Categorias.class));
                         overridePendingTransition(0, 0);
                         return true;
-                    case R.id.Sesion:
+                    case R.id.Postres:
                         startActivity(new Intent(ModificarDatos.this, Sesion.class));
+                        overridePendingTransition(0, 0);
+                        return true;
+                    case R.id.Cuenta:
+                        startActivity(new Intent(ModificarDatos.this, Cuenta.class));
                         overridePendingTransition(0, 0);
                         return true;
                 }

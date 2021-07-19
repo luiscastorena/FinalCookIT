@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinalCookIT"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Eliminar"></activity>
+        <activity android:name=".Postres"></activity>
+        <activity android:name=".Principales" />
+        <activity android:name=".Bebidas" />
+        <activity android:name=".Cuenta" />
+        <activity android:name=".Eliminar" />
         <activity android:name=".ModificarDatos" />
         <activity android:name=".Login" />
         <activity android:name=".Receta2" />

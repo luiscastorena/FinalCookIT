@@ -1,18 +1,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/Inicio"
-        android:icon="@drawable/ic_inicio"
-        android:title="Ingredientes"/>
+        android:id="@+id/Entradas"
+        android:icon="@drawable/ic_entrada_1"
+        android:title="Entradas"/>
     <item
-        android:id="@+id/Recetas"
-        android:icon="@drawable/ic_recetas"
-        android:title="Recetas"/>
+        android:id="@+id/Bebidas"
+        android:icon="@drawable/ic_bebida_1"
+        android:title="Bebidas"/>
     <item
-        android:id="@+id/Categorias"
-        android:icon="@drawable/ic_categorias"
-        android:title="Categorias"/>
+        android:id="@+id/Principales"
+        android:icon="@drawable/ic_platillos_p_1"
+        android:title="Principales"/>
     <item
-        android:id="@+id/Sesion"
-        android:icon="@drawable/ic_baseline_view_headline_24"
-        android:title="Sesion"/>
+        android:id="@+id/Postres"
+        android:icon="@drawable/ic_postre"
+        android:title="Postres"/>
+    <item
+        android:id="@+id/Cuenta"
+        android:icon="@drawable/ic_cuenta_1"
+        android:title="Cuenta"/>
 </menu>

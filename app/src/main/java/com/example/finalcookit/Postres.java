@@ -2,32 +2,27 @@ package com.example.finalcookit;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
 import android.widget.SearchView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements  SearchView.OnQueryTextListener{
+public class Postres extends AppCompatActivity implements SearchView.OnQueryTextListener{
     private RecyclerView courseRV;
     private ArrayList<llenargridview> llenargridviews;
     CourseAdapter courseAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTheme(R.style.Theme_FinalCookIT);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_postres);
+
         courseRV = findViewById(R.id.rv);
         SearchView searchView;
         searchView = findViewById(R.id.buscar);
@@ -35,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements  SearchView.OnQue
 
         llenargridviews = new ArrayList<>();
         llenargridviews.add(new llenargridview("Tortilla de Patatas",R.drawable.tortillapatatas));
-        llenargridviews.add(new llenargridview("Flan",R.drawable.flan));
         llenargridviews.add(new llenargridview("Huevos divorciados",R.drawable.huevosdivorciados));
         llenargridviews.add(new llenargridview("Hamburguesa al carbón",R.drawable.hamburguesaalcarbon));
         llenargridviews.add(new llenargridview("Pechuga Empanizada",R.drawable.pechugaempanizada));
@@ -57,12 +51,15 @@ public class MainActivity extends AppCompatActivity implements  SearchView.OnQue
         courseRV.setAdapter(courseAdapter);
         BottomNavigationView bottomNavigationView;
         bottomNavigationView= findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.Entradas);
+        bottomNavigationView.setSelectedItemId(R.id.Postres);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.Entradas:
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        overridePendingTransition(0, 0);
+
                         return true;
                     case R.id.Bebidas:
                         startActivity(new Intent(getApplicationContext(), Bebidas.class));
@@ -75,26 +72,17 @@ public class MainActivity extends AppCompatActivity implements  SearchView.OnQue
 
                         return true;
                     case R.id.Postres:
-                        startActivity(new Intent(getApplicationContext(), Postres.class));
-                        overridePendingTransition(0, 0);
-
                         return true;
                     case R.id.Cuenta:
                         startActivity(new Intent(getApplicationContext(), Cuenta.class));
                         overridePendingTransition(0, 0);
 
                         return true;
+
                 }
                 return false;
             }
         });
-
-       // GridView gridView = (GridView) findViewById(R.id.grid_view);
-        //gridView.setAdapter(new GaleriaImagenes(getApplicationContext()));
-
-
-
-
     }
 
     @Override
@@ -104,7 +92,6 @@ public class MainActivity extends AppCompatActivity implements  SearchView.OnQue
 
     @Override
     public boolean onQueryTextChange(String newText) {
-        courseAdapter.filtrado(newText);
         return false;
     }
 }
