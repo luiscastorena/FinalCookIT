@@ -18,7 +18,7 @@ import android.widget.SearchView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
-
+//Clase principal
 public class MainActivity extends AppCompatActivity implements  SearchView.OnQueryTextListener{
     private RecyclerView courseRV;
     private ArrayList<llenargridview> llenargridviews;
