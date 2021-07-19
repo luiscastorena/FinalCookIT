@@ -24,7 +24,7 @@ public class llenargridview {
         this.foto = foto;
     }
 
-
+//Hola amigos
 
 
 
